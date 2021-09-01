@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Category extends Model
+class Gender extends Model
 {
     use SoftDeletes, Traits\Uuid;
 
@@ -16,4 +16,5 @@ class Category extends Model
     ];
 
     public $incrementing = false;
+    protected $keyType = 'string';
 }
